@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Challenge2_Mobile</string>
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+    <string name="p3">Player 3</string>
+    <string name="p4">Player 4</string>
+    <string name="p5">Player 5</string>
+    <string name="p6">Player 6</string>
+
+    <string name="p1_desc">MR BACON</string>
+    <string name="p2_desc">EL BURITOS</string>
+    <string name="p3_desc">GH0ST</string>
+    <string name="p4_desc">BREADO</string>
+    <string name="p5_desc">PIZZARE</string>
+    <string name="p6_desc">SEAL1</string>
 </resources>

@@ -24,11 +24,14 @@ import com.example.challenge2_mobile.ui.theme.Challenge2_MobileTheme
 
 // Challenge 2
 // Zaid Sa'ad Humam (191344031)
-// ada bug, kemungkinan dikarenakan menggunakan gambar gif
+// safe
 
-val Crimson = 0xff750101
-val Moss = 0xff054A09
-val jingga = 0xffEB5E34
+val merah = 0xffd64545
+val Moss = 0xff5bd46d
+val jingga = 0xffd49353
+val lime = 0xff9be05e
+val yelo = 0xfffccf05
+val pinki = 0xffeb91e0
 val Horizontal = Alignment.CenterHorizontally
 val Vertikal = Arrangement.Center
 val MaxSize = Modifier.fillMaxSize()
@@ -58,8 +61,8 @@ fun getScreenHeight(): Int {
 @Preview(showBackground = true)
 @Composable
 fun celeng2() {
-    val surfaceWidth = getScreenWidth()
-    val surfaceHeigt = getScreenHeight()
+    val surfaceWidth = getScreenWidth()*0.12681
+    val surfaceHeigt = getScreenHeight()*0.1905
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxHeight()
@@ -77,7 +80,7 @@ fun celeng2() {
                     modifier = MaxSize
                 ){
                     Image(
-                        painter = painterResource(id = R.drawable.bacon),
+                        painter = painterResource(id = R.drawable.bacon_jpg),
                         contentDescription = "bacon bergoyang",
                         modifier = circle
                     )
@@ -96,7 +99,8 @@ fun celeng2() {
                 ){
                     Image(
                         painter = painterResource(id = R.drawable.seall),
-                        contentDescription = "seal bergoyang"
+                        contentDescription = "seal bergoyang",
+                        modifier = circle
                     )
                     Text(text = "P2", fontSize = 12.sp, textAlign = TextAlign.Center)
                 }
@@ -104,7 +108,7 @@ fun celeng2() {
 
             Surface(
                 modifier = Modifier.size(surfaceWidth.dp, surfaceHeigt.dp),
-                color = Color(Crimson)
+                color = Color(merah)
             ){
                 Column(
                     verticalArrangement = Vertikal,
@@ -126,7 +130,7 @@ fun celeng2() {
         ){
             Surface(
                 modifier = Modifier.size(surfaceWidth.dp, surfaceHeigt.dp),
-                color = Color(Crimson)
+                color = Color(pinki)
             ){
                 Column(
                     verticalArrangement = Vertikal,
@@ -144,7 +148,7 @@ fun celeng2() {
 
             Surface(
                 modifier = Modifier.size(surfaceWidth.dp, surfaceHeigt.dp),
-                color = Color(jingga)
+                color = Color(lime)
             ){
                 Column(
                     verticalArrangement = Vertikal,
@@ -153,7 +157,8 @@ fun celeng2() {
                 ){
                     Image(
                         painter = painterResource(id = R.drawable.burrito),
-                        contentDescription = "burrito bergoyang"
+                        contentDescription = "burrito bergoyang",
+                        modifier = circle
                     )
                     Text(text = "P5", fontSize = 12.sp, textAlign = TextAlign.Center)
                 }
@@ -161,7 +166,7 @@ fun celeng2() {
 
             Surface(
                 modifier = Modifier.size(surfaceWidth.dp, surfaceHeigt.dp),
-                color = Color(Moss)
+                color = Color(yelo)
             ){
                 Column(
                     verticalArrangement = Vertikal,
