@@ -24,6 +24,7 @@ import com.example.challenge2_mobile.ui.theme.Challenge2_MobileTheme
 
 // Challenge 2
 // Zaid Sa'ad Humam (191344031)
+// ada bug, kemungkinan dikarenakan menggunakan gambar gif
 
 val Crimson = 0xff750101
 val Moss = 0xff054A09
